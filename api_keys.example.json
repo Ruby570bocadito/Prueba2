@@ -1,0 +1,10 @@
+{
+  "github": "your_github_personal_access_token_here",
+  "shodan": "your_shodan_api_key_here",
+  "securitytrails": "your_securitytrails_api_key_here",
+  "censys_id": "your_censys_api_id_here",
+  "censys_secret": "your_censys_api_secret_here",
+  "otx": "your_otx_api_key_here",
+  "wayback": null,
+  "additional_notes": "Rename this file to 'api_keys.json' and fill in your actual API keys. Remove any keys you don't plan to use."
+}

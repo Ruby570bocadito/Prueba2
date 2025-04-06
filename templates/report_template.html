@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TargetTrace Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        h1 { color: #2c3e50; }
+        .finding { margin-bottom: 1.5em; }
+        .critical { color: #e74c3c; }
+        .warning { color: #f39c12; }
+        .info { color: #3498db; }
+    </style>
+</head>
+<body>
+    <h1>TargetTrace Report</h1>
+    <p>Generated on {{ date }}</p>
+    
+    {% for finding in findings %}
+    <div class="finding">
+        <h2 class="{{ finding.severity }}">{{ finding.title }}</h2>
+        <p>{{ finding.description }}</p>
+        <pre>{{ finding.evidence }}</pre>
+    </div>
+    {% endfor %}
+</body>
+</html>
